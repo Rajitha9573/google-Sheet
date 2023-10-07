@@ -1,0 +1,138 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+#navbar{
+    display: flex;
+    padding:10px;
+    background-color: #218c74;
+    gap:25px;
+}
+
+.buttonsIcon{
+   font-size: 18px;
+   padding:5px;
+
+}
+.buttonsIcon:hover{
+    text-decoration: underline;
+    background-color: #fff;
+}
+#home{
+    background-color: #fff;
+}
+.excelSheet{
+    width:100vw;
+    height:550px;
+    overflow-y: scroll;
+}
+#main-container{
+    display:flex;
+    position:sticky;
+    left:0px;
+    top:0px;
+    background-color: white;
+    width:fit-content;
+    z-index:100;
+    
+}
+#sno{
+    padding: 10px;
+    min-width:100px;
+    align-items:center;
+    border:1px solid rgb(189, 189, 191);
+    /* z-index: 100; */
+    /* position: sticky;
+    top:0;
+    left:0;
+    background-color: white; */
+}
+.style{
+    display: flex;
+    padding: 10px;
+    min-width:100px;
+    /* text-align:center; */
+     border:1px solid rgb(189, 189, 191); 
+     
+}
+  #body{
+    width: fit-content;
+
+     /* display: flex;  */
+    /* border:1px solid blue; */
+} 
+.row{
+    display: flex;
+    
+}
+
+
+  .row > b:first-child {
+    background-color: #fff;
+    position: sticky;
+    left: 0;
+    z-index: 10;
+  }  
+.row>b,.row>div{
+    padding: 10px;
+    min-width:100px;
+    text-align:center;
+    border:1px solid rgb(189, 189, 191);
+    outline-color: green;
+
+}
+#active-cell{
+    width:10%;
+    padding:8px;
+    background-color: #fff;
+    
+
+}
+#options{
+    background-color: #ecf0f1;
+    padding:10px;
+}
+#menus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin:10px;
+}
+#fontSize{
+    font-size: 16px;
+}
+.fontStyle{
+    font-size: 17px;
+}
+#menus>div:hover{
+    background-color: rgb(195, 191, 191);
+    
+    cursor: pointer;
+    
+}
+#sheetBar{
+    display: flex;
+    gap:10px;
+}
+#plusIcon:hover{
+   transition: scale(1.3);
+}
+#formulaBar{
+    display: flex;
+    width:100%;
+    gap:10px;
+    
+}
+#functionBar{
+    width:1.5%;
+    padding:8px;
+    background-color:transparent;
+}
+#inputBar{
+    border:1px solid rgb(189, 189, 191);
+    width:85%;
+    padding:6px;
+    outline-color: green;
+    background-color: #fff;
+}

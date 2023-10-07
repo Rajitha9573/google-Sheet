@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <nav id="navbar">
+        <div class="buttonsIcon">File</div>
+        <div id ="home" class="buttonsIcon">Home</div>
+        <div class="buttonsIcon">Insert</div>
+        <div class="buttonsIcon">Page layout</div>
+        <div class="buttonsIcon">Formulas</div>
+        <div class="buttonsIcon">Data</div>
+        <div class="buttonsIcon">Review</div>
+        <div class="buttonsIcon">Help</div>
+
+    </nav>
+<div id="options">
+    <div id="menus">
+    <select class="fontStyle" id="fontFamily" onchange="onClickFontFamily(this)">
+        <option class="fontStyle" value="Arial">Arial</option>
+        <option class="fontStyle" value="Times New Roman">Times New Roman</option>
+        <option class="fontStyle" value="Verdana">Verdana</option>
+        <option class="fontStyle" value="serif">serif</option>
+        <option class="fontStyle" value="sans-serif">sans-serif</option>
+        <option class="fontStyle" value="monospace">monospace</option>
+        <option class="fontStyle" value="cursive">cursive</option>
+        <option class="fontStyle" value="fantasy">fantasy</option>
+        <option class="fontStyle" value="system-ui">system-ui</option>
+        <option class="fontStyle" value="ui-serif">ui-serif</option>
+        <option class="fontStyle" value="fangsong">fangsong</option>
+
+    </select>
+    
+        <select id="fontSize" onchange="updateFontSize(this)" >
+             <option  value="16px" selected >16</option>
+            <option  value="18px" >18</option>
+            <option  value="20px" >20</option>
+            <option  value="22px" >22</option>
+            <option  value="26px" >26</option>
+            <option  value="30px" >30</option> 
+            <option  value="35px" >35</option>
+            <option  value="40px" >40</option>
+            <option  value="44px" >44</option>
+            <option  value="46px" >46</option>
+            <option  value="50px" >50</option>
+        </select>
+        <div id="bold"  onclick="onClickBold(this)">B</div>
+        <div id ="italic" onClick="onClickItalic(this)">I</div>
+        <div id="inderline" onClick="onClickUnderline(this)">U</div>
+
+        <div class="text-align" data-value="left" onclick="onClickTextAlign(this)"><i class="fa-solid fa-align-left"></i></div>
+        <div class="text-align" data-value="center" onclick="onClickTextAlign(this)"><i class="fa-solid fa-align-center"></i></div>
+        <div class="text-align" data-value="right" onclick="onClickTextAlign(this)"><i class="fa-solid fa-align-right"></i></div>
+        <div id="color">
+            <label for="color-picker"><i class="fa-solid fa-pen-to-square"></i></label>
+            <input onchange="onChangeTextColor(this)" type="color" id="color-picker" style="width:0px; height:0px">
+        </div>
+        <div id="bgColor">
+            <label for="bgcolor-picker"><i class="fa-solid fa-fill-drip"></i></label>
+            <input onchange="onChangeBackgroundColor(this)" type="color" id="bgcolor-picker" style="width:0px; height:0px">
+        </div>
+
+    </div>
+    <div id="formulaBar">
+        <span id="active-cell">Null</span>
+        <img id="functionBar" src="https://img.icons8.com/ios/50/000000/formula-fx.png">
+        
+        <div id="inputBar" contenteditable="true"></div>
+    </div>
+</div>
+    <main class="excelSheet" style="width: 100vw; margin: auto; ">
+    <section id="main-container"><b id="sno" style="position: sticky; left: 0; top: 0; background-color: white">S.NO</b></section>
+    
+    <div id ="body"></div>
+</main>
+<div id="sheetBar">
+    <div id="plusIcon"><i class="fa-solid fa-circle-plus" style="color: #18bb0c;"></i></div>
+    <div id="sheetOne">Sheet</div>
+
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
